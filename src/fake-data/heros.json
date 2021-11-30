@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "MS. ROBOT",
+    "powers": [
+      {
+        "id": 1,
+        "power": "Coding with VIM"
+      },
+      {
+        "id": 2,
+        "power": "Know Angular"
+      }
+    ],
+    "rating": 4.2,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+  },
+  {
+    "id": 2,
+    "name": "Richard Stallman",
+    "powers": [
+      {
+        "id": 3,
+        "power": "Freedom Protector"
+      }
+    ],
+    "rating": 4.5,
+    "description": "Id neque aliquam vestibulum morbi blandit. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam"
+  },
+  {
+    "id": 3,
+    "name": "Tim Berners-Lee",
+    "powers": [
+      {
+        "id": 4,
+        "power": "Transport Objects Through HTTP"
+      }
+    ],
+    "rating": 3.2,
+    "description": "Quam nulla porttitor massa id neque aliquam. Eleifend quam adipiscing vitae proin. Consectetur adipiscing"
+  },
+  {
+    "id": 4,
+    "name": "Spiderman",
+    "powers": [
+      {
+        "id": 5,
+        "power": "Climp Building"
+      }
+    ],
+    "rating": 2.5,
+    "description": "lit ut aliquam purus sit amet. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Sodales"
+  },
+  {
+    "id": 5,
+    "name": "Superman",
+    "powers": [
+      {
+        "id": 6,
+        "power": "Flying"
+      }
+    ],
+    "rating": 1.7,
+    "description": "Sodales neque sodales ut etiam sit amet nisl. Ornare arcu odio ut sem nulla. Sit amet dictum sit amet justo donec enim"
+  }
+]
