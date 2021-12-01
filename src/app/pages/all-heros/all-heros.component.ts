@@ -48,6 +48,8 @@ export class AllHerosComponent implements OnInit, OnDestroy {
       }));
       this.sortHeros('name');
       this.heros = this.displayedHeros;
+      console.log(this.heros);
+      
     });
   }
 
@@ -87,5 +89,9 @@ export class AllHerosComponent implements OnInit, OnDestroy {
 
   goToHero(hero: IHero) {
     this.router.navigateByUrl(`/hero/${hero.id}`);
+  }
+
+  rate(hero: IHero, rate: number) {
+    this.heroService.rateHero(hero.id, rate);
   }
 }

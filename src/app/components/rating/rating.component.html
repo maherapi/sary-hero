@@ -1,0 +1,11 @@
+<span *ngFor="let val of range(5)">
+  <button
+    class="btn m-0 p-0 fa-star cursor-pointer"
+    [ngClass]="{ fas: hoveredStar >= val + 1, far: hoveredStar < val + 1 }"
+    (mouseenter)="handleStarHover(val + 1)"
+    (mouseout)="handleStarMouseout()"
+    (click)="rate(val + 1)"
+  ></button>
+</span>
+<span class="mx-1">({{ rating }})</span>
+<span *ngIf="loading" class="spinner-border spinner-border-sm"></span>

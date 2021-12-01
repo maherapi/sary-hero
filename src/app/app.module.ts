@@ -9,6 +9,7 @@ import { AllHerosComponent } from './pages/all-heros/all-heros.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeroComponent } from './pages/hero/hero.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RatingComponent } from './components/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     AllHerosComponent,
     NotFoundComponent,
     HeroComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,

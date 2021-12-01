@@ -12,7 +12,7 @@
         "power": "Know Angular"
       }
     ],
-    "rating": 4.2,
+    "rating": 0,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
   },
   {
@@ -24,7 +24,7 @@
         "power": "Freedom Protector"
       }
     ],
-    "rating": 4.5,
+    "rating": 0,
     "description": "Id neque aliquam vestibulum morbi blandit. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam"
   },
   {
@@ -36,7 +36,7 @@
         "power": "Transport Objects Through HTTP"
       }
     ],
-    "rating": 3.2,
+    "rating": 0,
     "description": "Quam nulla porttitor massa id neque aliquam. Eleifend quam adipiscing vitae proin. Consectetur adipiscing"
   },
   {
@@ -48,7 +48,7 @@
         "power": "Climp Building"
       }
     ],
-    "rating": 2.5,
+    "rating": 0,
     "description": "lit ut aliquam purus sit amet. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Sodales"
   },
   {
@@ -60,7 +60,7 @@
         "power": "Flying"
       }
     ],
-    "rating": 1.7,
+    "rating": 0,
     "description": "Sodales neque sodales ut etiam sit amet nisl. Ornare arcu odio ut sem nulla. Sit amet dictum sit amet justo donec enim"
   }
 ]

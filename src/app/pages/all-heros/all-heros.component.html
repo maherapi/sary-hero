@@ -12,7 +12,10 @@
       >
         Filters
       </h5>
-      <button class="btn col-auto" (click)="filters.classList.toggle('collapsed')">
+      <button
+        class="btn col-auto"
+        (click)="filters.classList.toggle('collapsed')"
+      >
         <i class="fas fa-filter"></i>
       </button>
     </div>
@@ -30,7 +33,12 @@
     </div>
 
     <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" id="sort" [(ngModel)]="sortByPowers" />
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="sort"
+        [(ngModel)]="sortByPowers"
+      />
       <label class="form-check-label" for="sort">sort by power</label>
     </div>
   </div>
@@ -56,7 +64,13 @@
             </button>
           </td>
           <td>{{ hero.powers }}</td>
-          <td>{{ hero.rating }}</td>
+          <td>
+            <app-rating
+              #rating
+              [rating]="hero.rating"
+              (rate)="rate(hero, $event); rating.loading = true"
+            ></app-rating>
+          </td>
         </tr>
       </tbody>
     </table>
