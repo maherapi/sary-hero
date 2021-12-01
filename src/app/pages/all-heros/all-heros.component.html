@@ -57,11 +57,11 @@
       </thead>
       <tbody>
         <tr *ngFor="let hero of displayedHeros; let i = index">
-          <th scope="row">{{ i + 1 }}</th>
-          <td>
-            <button class="btn" (click)="goToHero(hero)">
-              {{ hero.name }}
-            </button>
+          <th scope="row">
+            {{ i + 1 }}
+          </th>
+          <td [routerLink]="'/hero/' + hero.id" [style.cursor]="'pointer'">
+            {{ hero.name }}
           </td>
           <td>{{ hero.powers }}</td>
           <td>

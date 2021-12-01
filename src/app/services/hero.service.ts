@@ -11,9 +11,17 @@ export class HeroService {
   private heros$: Observable<IHero[]> = this.herosSubject.asObservable();
 
   constructor(private http: HttpClient) {
+
+    // getting data from API (mimic)
     this.http
       .get<IHero[]>('/assets/fake-data/heros.json')
       .toPromise()
+      .then((d) =>
+        (d || []).map((h) => ({
+          ...h,
+          powers: h.sourcePowers?.map((p) => p.power).join(', ') || '',
+        }))
+      )
       .then((d) => this.herosSubject.next(d || []));
   }
 

@@ -42,10 +42,7 @@ export class AllHerosComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.heros$ = this.heroService.getHeros();
     this.herosSubscription = this.heros$.subscribe((hs) => {
-      this.displayedHeros = hs.map((h) => ({
-        ...h,
-        powers: h.sourcePowers?.map((p) => p.power).join(', ') || '',
-      }));
+      this.displayedHeros = hs;
       this.sortHeros('name');
       this.heros = this.displayedHeros;
       console.log(this.heros);
@@ -85,10 +82,6 @@ export class AllHerosComponent implements OnInit, OnDestroy {
       if (normalizedA! < normalizedB!) return -1;
       return 0;
     });
-  }
-
-  goToHero(hero: IHero) {
-    this.router.navigateByUrl(`/hero/${hero.id}`);
   }
 
   rate(hero: IHero, rate: number) {

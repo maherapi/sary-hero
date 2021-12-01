@@ -1,1 +1,30 @@
-<p>hero works!</p>
+<div class="card animate__animated animate__fadeInUp my-5">
+  <div class="card-header">
+    <div class="card-title">
+      <h3>Hero Profile</h3>
+    </div>
+  </div>
+  <div class="card-body p-5">
+    <div class="d-flex justify-content-center">
+      <img src="/assets/default-avatar.png" alt="" width="200" height="200" />
+    </div>
+    <div *ngIf="(hero$ | async)?.name" class="row my-3">
+      <div class="col-12 col-md-4 fw-bold">Hero Name</div>
+      <div class="col-12 col-md-8">
+        {{ (hero$ | async)?.name }}
+      </div>
+    </div>
+    <div *ngIf="(hero$ | async)?.description" class="row my-3">
+      <div class="col-12 col-md-4 fw-bold">Hero Description</div>
+      <div class="col-12 col-md-8">
+        {{ (hero$ | async)?.description }}
+      </div>
+    </div>
+    <div *ngIf="(hero$ | async)?.powers" class="row my-3">
+      <div class="col-12 col-md-4 fw-bold">Hero Powers</div>
+      <div class="col-12 col-md-8">
+        {{ (hero$ | async)?.powers }}
+      </div>
+    </div>
+  </div>
+</div>
