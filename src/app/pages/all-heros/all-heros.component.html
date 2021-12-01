@@ -1,1 +1,64 @@
-<p>all-heros works!</p>
+<div class="animate__animated animate__fadeInUp card my-5">
+  <div class="card-header">
+    <div class="row justify-content-between">
+      <h5
+        class="
+          card-title
+          col-auto
+          d-flex
+          justify-content-center
+          align-items-center
+        "
+      >
+        Filters
+      </h5>
+      <button class="btn col-auto" (click)="filters.classList.toggle('collapsed')">
+        <i class="fas fa-filter"></i>
+      </button>
+    </div>
+  </div>
+  <div class="card-body collapsable" #filters>
+    <div class="mb-3">
+      <label for="search" class="form-label">Search</label>
+      <input
+        id="search"
+        type="text"
+        class="form-control"
+        placeholder="Enter name or power"
+        [(ngModel)]="searchQuery"
+      />
+    </div>
+
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" id="sort" [(ngModel)]="sortByPowers" />
+      <label class="form-check-label" for="sort">sort by power</label>
+    </div>
+  </div>
+</div>
+
+<div class="card my-5 animate__animated animate__fadeInUp animate__delay-1s">
+  <div class="p-3">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Hero Name</th>
+          <th scope="col">Powers</th>
+          <th scope="col">Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hero of displayedHeros; let i = index">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>
+            <button class="btn" (click)="goToHero(hero)">
+              {{ hero.name }}
+            </button>
+          </td>
+          <td>{{ hero.powers }}</td>
+          <td>{{ hero.rating }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

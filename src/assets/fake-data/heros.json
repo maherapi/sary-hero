@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "MS. ROBOT",
-    "powers": [
+    "sourcePowers": [
       {
         "id": 1,
         "power": "Coding with VIM"
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Richard Stallman",
-    "powers": [
+    "sourcePowers": [
       {
         "id": 3,
         "power": "Freedom Protector"
@@ -30,7 +30,7 @@
   {
     "id": 3,
     "name": "Tim Berners-Lee",
-    "powers": [
+    "sourcePowers": [
       {
         "id": 4,
         "power": "Transport Objects Through HTTP"
@@ -42,7 +42,7 @@
   {
     "id": 4,
     "name": "Spiderman",
-    "powers": [
+    "sourcePowers": [
       {
         "id": 5,
         "power": "Climp Building"
@@ -54,7 +54,7 @@
   {
     "id": 5,
     "name": "Superman",
-    "powers": [
+    "sourcePowers": [
       {
         "id": 6,
         "power": "Flying"

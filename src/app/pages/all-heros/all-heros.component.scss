@@ -1,0 +1,11 @@
+.collapsable {
+  transition: all .3s ease-in-out;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+.collapsable.collapsed {
+  transform-origin: top;
+  transform: scaleY(0);
+  max-height: 0;
+}
