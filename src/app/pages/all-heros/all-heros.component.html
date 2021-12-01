@@ -46,7 +46,8 @@
 
 <div class="card my-5 animate__animated animate__fadeInUp animate__delay-1s">
   <div class="p-3">
-    <table class="table">
+    <!-- desktop table -->
+    <table class="d-none d-md-table table table-bordered">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -74,5 +75,29 @@
         </tr>
       </tbody>
     </table>
+
+    <!-- mobile table -->
+    <div class="d-block d-md-none">
+      <div *ngFor="let hero of displayedHeros" class="my-3">
+        <div class="row m-0 p-0">
+          <div class="col-4 border bg-light fw-bold">name</div>
+          <div class="col-8 border">{{ hero.name }}</div>
+        </div>
+        <div class="row m-0 p-0">
+          <div class="col-4 border bg-light fw-bold">powers</div>
+          <div class="col-8 border">{{ hero.powers }}</div>
+        </div>
+        <div class="row m-0 p-0">
+          <div class="col-4 border bg-light fw-bold">rate</div>
+          <div class="col-8 border">
+            <app-rating
+              #rating
+              [rating]="hero.rating"
+              (rate)="rate(hero, $event); rating.loading = true"
+            ></app-rating>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
