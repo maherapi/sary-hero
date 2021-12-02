@@ -79,7 +79,11 @@
     <!-- mobile table -->
     <div class="d-block d-md-none">
       <div *ngFor="let hero of displayedHeros" class="my-3">
-        <div class="row m-0 p-0">
+        <div
+          class="row m-0 p-0"
+          [routerLink]="'/hero/' + hero.id"
+          [style.cursor]="'pointer'"
+        >
           <div class="col-4 border bg-light fw-bold">name</div>
           <div class="col-8 border">{{ hero.name }}</div>
         </div>
